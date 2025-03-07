@@ -1,0 +1,33 @@
+---
+title: Archives
+description: 지금까지 작업했던 프로젝트를 모아놓은 곳입니다.
+permalink: archives
+visible: true
+---
+
+<div class="hyde posts">
+  {% assign sorted = site.archives | sort: 'date' | reverse %} {% for archive in sorted %}
+  <div class="hyde post{% unless forloop.last %} divider{% endunless %}">
+    <a href="{{ site.baseurl }}{{ archive.url }}">
+      <div class="hyde post-thumbnail-wrapper">
+        {% if archive.image %}
+        <div class="hyde post-thumbnail" style="background-image: url('{{ site.baseurl }}/assets/images/archives/{{ archive.image }}');"></div>
+        {% elsif archive.youtube %}
+        <div
+          class="hyde post-thumbnail"
+          style="background-image: url('{{ archive.youtube | prepend: 'https://img.youtube.com/vi/' }}/maxresdefault.jpg')"
+        ></div>
+        {% else %}
+        <div class="hyde post-thumbnail"></div>
+        {% endif %}
+      </div>
+    </a>
+    <a href="{{ site.baseurl }}{{ archive.url }}">
+      <h2 class="hyde post-title">{{ archive.title }}</h2>
+    </a>
+    <div class="hyde post-trail">
+      <span class="hyde post-date">{{ archive.date | date: '%Y년 %-m월 %-d일' }}</span>
+    </div>
+  </div>
+  {% else %} {% include empty.html %} {% endfor %}
+</div>

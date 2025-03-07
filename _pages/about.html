@@ -1,0 +1,90 @@
+---
+title: About
+description: 저를 소개합니다.
+permalink: about
+visible: true
+---
+
+<div class="hyde content about">
+  <h2>devhaaana <small class="hyde name">Hana Go</small></h2>
+  <p>
+    대학에서 융합소프트웨어학 및 반도체공학를 전공하였으며, 2년간 무선 네트워크와 이차전지, 그리고 AI를 연구하였습니다.
+    <br/>
+    또한 정부출연연구기관에서 약 2년간 인턴 연구원으로 근무하며 Transformer를 활용한 데이터 분류 모델을 연구했습니다.
+    <br/>
+    현재는 빠르게 변화하는 딥러닝 모델을 계속 공부하고 있습니다. 그리고 실생활에서 필요한 프로그램을 개발하고 있습니다.
+  </p>
+  <p></p>
+  <p></p>
+  <h2>⚒️ Skills</h2>
+  <div class="hyde tags skills">
+    <a class="hyde tag">Python</a>
+    <a class="hyde tag">PyTorch</a>
+    <a class="hyde tag">Keras</a>
+    <a class="hyde tag">Tensorflow</a>
+    <a class="hyde tag">Pandas</a>
+    <a class="hyde tag">Numpy</a>
+    <a class="hyde tag">Matplotlib</a>
+    <a class="hyde tag">Django</a>
+    <a class="hyde tag">HTML5</a>
+    <a class="hyde tag">CSS</a>
+    <a class="hyde tag">MySQL</a>
+    <a class="hyde tag">C/C++</a>
+    <a class="hyde tag">MATLAB</a>
+    <a class="hyde tag"><i class="fas fa-code"></i></a>
+  </div>
+
+  <h2>🎓 Education</h2>
+  <div class="hyde education-wrapper">
+    {% for item in site.data.education %}
+    <div class="hyde education divider">
+      <div class="hyde education-main">
+        <div class="hyde education-major">{{ item.major }}</div>
+        <div class="hyde education-degree">{{ item.degree }}</div>
+      </div>
+      <div class="hyde education-desc">
+        <p class="hyde education-place">{{ item.place }}</p>
+        <p class="hyde education-duration">{{ item.duration }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <h2>📖 Publication</h2>
+  <div class="hyde publication-wrapper">
+    {% for item in site.data.publication %}
+      <div class="hyde publication divider">
+        <div class="hyde publication-main">
+          <div class="hyde publication-title">
+            <a href="#{{ item.title }}">{{ item.title }}</a>
+          </div>
+          <div class="hyde publication-author">{{ item.authors }}</div>
+        </div>
+        <div class="hyde publication-desc">
+          <p class="hyde publication-publisher">{{ item.publisher }}</p>
+          <p class="hyde publication-date">{{ item.year }}</p>
+        </div>
+      </div>
+  
+      <div id="{{ item.title }}" class="hyde lightbox" onclick="history.back()">
+        <object data="{{ site.baseurl }}/assets/documents/{{ item.pdf_file }}" type="application/pdf" width="80%" height="80%">
+          <p>PDF 파일을 불러오는 데 실패했습니다. Download the PDF: <a href="{{ site.baseurl }}/assets/documents/{{ item.pdf_file }}">Download</a>.</p>
+        </object>
+      </div>
+    {% endfor %}
+  </div>
+
+  <h2>📁 Career</h2>
+  <div class="hyde career-wrapper">
+    {% for item in site.data.career %}
+    <div class="hyde career divider">
+      <div class="hyde career-position">{{ item.position }}</div>
+      <div class="hyde career-desc">
+        <p class="hyde career-place">{{ item.place }}</p>
+        <p class="hyde career-duration">{{ item.duration }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+

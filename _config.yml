@@ -1,0 +1,55 @@
+title               : sem;colon.log
+description         : >-
+  AI Researcher
+
+url                 : "https://devhaaana.github.io/semicolon-log"
+baseurl             : "/semicolon-log"
+github              : devhaaana
+email               : one4435go@gmail.com
+google_analytics    : "G-NWLQWFT8HW"
+
+timezone            : Asia/Seoul
+
+exclude             : [README.md, Gemfile, Gemfile.lock]
+
+comments            :
+  enabled           : true
+  repo              : "devhaaana/semicolon-log"
+  issue-term        : pathname
+
+collections         :
+  pages             :
+    output          : true
+  archives          :
+    output          : true
+  tags              :
+    output          : true
+  til               :
+    output          : true
+
+defaults            :
+  - scope           :
+      type          : pages
+    values          :
+      layout        : default
+  - scope           :
+      type          : posts
+    values          :
+      layout        : post
+      permalink     : /blog/:title
+  - scope           :
+      type          : archives
+    values          :
+      layout        : archive
+      permalink     : /archives/:title
+  - scope           :
+      type          : tags
+    values          :
+      layout        : tag
+      permalink     : /tags/:title
+  - scope           :
+      type          : til
+    values          :
+      layout        : til
+      permalink     : /til/:title
+

@@ -1,0 +1,36 @@
+---
+title: TIL
+description: 매일 배운 것을 올리는 곳입니다.
+permalink: til
+visible: true
+---
+
+
+<div class="hyde posts">
+  {% assign sorted = site.til | sort: 'date' | reverse %} {% for post in sorted %}
+  <div class="hyde post{% unless forloop.last %} divider{% endunless %}">
+    <a href="{{ site.baseurl }}{{ post.url }}">
+      <div class="hyde post-thumbnail-wrapper">
+        {% if post.image %}
+        <div class="hyde post-thumbnail" style="background-image: url('{{ site.baseurl }}/assets/images/til/{{ post.image }}');"></div>
+        {% elsif post.youtube %}
+        <div
+          class="hyde post-thumbnail"
+          style="background-image: url('{{ post.youtube | prepend: 'https://img.youtube.com/vi/' }}/maxresdefault.jpg')"
+        ></div>
+        {% else %}
+        <div class="hyde post-thumbnail"></div>
+        {% endif %}
+      </div>
+    </a>
+    <a href="{{ site.baseurl }}{{ post.url }}">
+      <h2 class="hyde post-title">{{ post.title }}</h2>
+    </a>
+    <p class="hyde post-preview">{{ post.content | strip_html | truncate: 200 }}</p>
+    {% include tags.html %}
+    <div class="hyde post-trail">
+      <span class="hyde post-date">{{ post.date | date: '%Y년 %-m월 %-d일' }}</span>
+    </div>
+  </div>
+  {% else %} {% include empty.html %} {% endfor %}
+</div>
