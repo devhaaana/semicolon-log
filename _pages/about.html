@@ -50,6 +50,22 @@ visible: true
     {% endfor %}
   </div>
 
+  <h2>🏆 Awards & Scholarships</h2>
+  <div class="hyde award-wrapper">
+    {% for item in site.data.award %}
+    <div class="hyde award divider">
+      <div class="hyde award-main">
+        <div class="hyde award-title">{{ item.title }}</div>
+        <div class="hyde award-award">{{ item.award }}</div>
+      </div>
+      <div class="hyde award-desc">
+        <p class="hyde award-place">{{ item.place }}</p>
+        <p class="hyde award-duration">{{ item.duration }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
   <h2>📖 Publication</h2>
   <div class="hyde publication-wrapper">
     {% for item in site.data.publication %}

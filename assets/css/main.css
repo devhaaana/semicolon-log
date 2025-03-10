@@ -1208,6 +1208,7 @@ hr {
   font-size: 0.875rem;
   color: #aaaab3;
 }
+
 .hyde.education-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1260,6 +1261,60 @@ hr {
   font-size: 0.875rem;
   color: #aaaab3;
 }
+
+.hyde.award-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.hyde.award-wrapper .hyde.award {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-bottom: 0.75rem;
+  margin-bottom: 1rem;
+}
+.hyde.award-wrapper .hyde.award .hyde.award-main {
+  max-width: 50%;
+  text-align: left;
+}
+.hyde.award-wrapper .hyde.award .hyde.award-main .hyde.award-title {
+  font-weight: 700;
+}
+.hyde.award-wrapper .hyde.award .hyde.award-main .hyde.award-award {
+  font-weight: 500;
+  font-size: 1rem;
+}
+.hyde.award-wrapper .hyde.award .hyde.award-desc {
+  font-size: 1rem;
+  text-align: right;
+}
+.hyde.award-wrapper .hyde.award .hyde.award-desc p {
+  margin: 0;
+}
+.hyde.award-wrapper .hyde.award .hyde.award-desc .hyde.award-place {
+  font-weight: 500;
+}
+.hyde.award-wrapper .hyde.award .hyde.award-desc .hyde.award-duration {
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #aaaab3;
+}
+
 .hyde.publication-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
