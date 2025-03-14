@@ -15,7 +15,12 @@ exclude             : [README.md, Gemfile, Gemfile.lock]
 comments            :
   enabled           : true
   repo              : "devhaaana/semicolon-log"
-  issue-term        : pathname
+  repo-id           : "R_kgDOOExhZg"
+  category          : "Comments"
+  category-id       : "DIC_kwDOOExhZs4CoCCB"
+  mapping           : "pathname"
+  theme             : "preferred_color_scheme"
+  # issue-term        : pathname
 
 collections         :
   pages             :
@@ -25,6 +30,8 @@ collections         :
   tags              :
     output          : true
   til               :
+    output          : true
+  techlog           :
     output          : true
 
 defaults            :
@@ -52,4 +59,9 @@ defaults            :
     values          :
       layout        : til
       permalink     : /til/:title
+  - scope           :
+      type          : techlog
+    values          :
+      layout        : techlog
+      permalink     : /tech-log/:title
 
