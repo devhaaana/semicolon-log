@@ -181,6 +181,7 @@
 } /* Literal.Number.Integer.Long */
 
 .highlight .gh {
+  color: #999
 } /* Generic Heading & Diff Header */
 .highlight .gu {
   color: #75715e;

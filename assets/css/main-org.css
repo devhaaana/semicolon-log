@@ -101,15 +101,14 @@ img {
   word-break: break-all;
 }
 .hyde.content blockquote {
-  /* border-radius: 10px; */
-  border-left: 5px solid #4285F4;
+  border-radius: 10px;
+  border-left: 7px solid #4285F4;
   padding-left: 1rem;
 }
 .hyde.content blockquote p {
   color: #363636;
 }
 .hyde.content pre.highlight {
-  overflow-x: auto;
   background-color: #2a2a2a;
   color: #eaeaec;
   padding: 1rem;
@@ -158,6 +157,128 @@ img {
   /* background: #b9d4ff; */
   color: white;
 }
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #222;
+  }
+  .hyde.navbar-parent.hyde.navbar-bg {
+    background-color: rgba(43, 43, 43, 0.9) !important;
+  }
+  .hyde.navbar-parent.hyde.navbar-bg .hyde.nav-toggler a {
+    color: white !important;
+  }
+  .hyde.navbar-parent.hyde.navbar-bg .hyde.nav-item a {
+    color: white !important;
+  }
+  .hyde.jumbotron {
+    color: #f4f4f5 !important;
+    background-image: url("../images/background/macOS-Sequoia-Dark.jpg") !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+  }
+  .hyde.content {
+    color: #eaeaec;
+  }
+  .hyde.content a {
+    color: #6299f3;
+  }
+  td a:hover{
+    color: #F4B400 !important;
+  }
+  .index-container a:hover {
+    color: #F4B400 !important;
+  }
+  .hyde.content .hyde.share .hyde.share-item {
+    color: #363636;
+  }
+  .hyde.content .hyde.share .hyde.share-item:hover {
+    color: #6299f3;
+  }
+  .hyde.content .hyde.signature {
+    background-color: #2b2b2b;
+  }
+  .hyde.content blockquote p {
+    color: #d4d4d9 !important;
+  }
+  .hyde.content code.highlighter-rouge {
+    /* background-color: #eaeaec !important; */
+    background-color: #ffe7a0 !important;
+    color: #222 !important;
+  }
+  .hyde.post .hyde.post-thumbnail-wrapper {
+    background-color: #2b2b2b !important;
+  }
+  .hyde.post .hyde.post-thumbnail-wrapper .hyde.post-thumbnail {
+    opacity: 0.4 !important;
+  }
+  .hyde.post .hyde.post-thumbnail-wrapper .hyde.post-thumbnail:hover {
+    opacity: 0.6 !important;
+  }
+  .hyde.post .hyde.post-author {
+    color: #f4f4f5 !important;
+  }
+  .hyde.post .hyde.post-title {
+    color: #f4f4f5 !important;
+  }
+  .hyde.post .hyde.post-preview {
+    color: #d4d4d9 !important;
+  }
+  .hyde.portfolio
+    .hyde.portfolio-item-wrapper
+    .hyde.portfolio-item:hover
+    .hyde.thumbnail {
+    opacity: 0.6 !important;
+  }
+  .hyde.portfolio
+    .hyde.portfolio-item-wrapper
+    .hyde.portfolio-item
+    .hyde.thumbnail {
+    opacity: 0.4 !important;
+  }
+  .hyde.tags .hyde.tag {
+    background-color: #eaeaec !important;
+  }
+  hr {
+    background-color: #2b2b2b !important;
+  }
+  .hyde.divider {
+    border-bottom: 1px solid #2b2b2b !important;
+  }
+  .hyde.btn-default {
+    color: white !important;
+    border: 2px solid white !important;
+  }
+  .hyde.btn-default:hover {
+    color: #222 !important;
+    background-color: white !important;
+  }
+  .hyde.header .fa-bolt:hover {
+    color: #F4B400 !important;
+  }
+  .hyde.footer-wrapper {
+    color: white !important;
+    background: linear-gradient(45deg, #2b2b2b 45%, #363636 100%) !important;
+  }
+  .hyde.footer-wrapper .hyde.footer .hyde.footer-menu li a {
+    color: white !important;
+  }
+  .hyde.footer-wrapper .hyde.footer .hyde.footer-menu.links li a:hover {
+    color: #4285F4 !important;
+  }
+  .hyde.footer-wrapper .hyde.footer .hyde.footer-menu.social a {
+    background-color: #444 !important;
+  }
+  .hyde.footer-wrapper .hyde.footer .hyde.footer-menu.social a:hover {
+    color: #222 !important;
+    background-color: white !important;
+  }
+  .hyde.footer-wrapper .hyde.footer .text {
+    color: #aaaab3 !important;
+  }
+  .hyde.footer-wrapper .hyde.footer .text a {
+    color: #d4d4d9 !important;
+  }
+}
 .hyde.container {
   margin: 0 auto;
   width: 60%;
@@ -180,7 +301,6 @@ img {
 .hyde.navbar-parent {
   -webkit-transition: background-color 0.2s ease, color 0.2s ease;
   transition: background-color 0.2s ease, color 0.2s ease;
-  white-space: nowrap;
 }
 .hyde.navbar-parent.hyde.navbar-bg {
   background-color: rgba(255, 255, 255, 0.9);
@@ -560,8 +680,7 @@ img {
 .hyde.posts .hyde.post .hyde.hyde.post-thumbnail-wrapper {
   overflow: hidden;
   border-radius: 5px;
-  /* background-color: #222; */
-  background-color: #aaaab3;
+  background-color: #222;
 }
 .hyde.posts .hyde.post .hyde.hyde.post-thumbnail-wrapper .hyde.post-thumbnail {
   height: 14rem;
