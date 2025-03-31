@@ -72,3 +72,19 @@ date: 작성 날짜 (yyyy-mm-dd)
 ---
 공부한 내용
 ```
+
+### TECHLOG 추가하기
+
+`_techlog` 디렉토리에 `yyyy-mm-dd-제목.md` 파일 생성:
+
+```yaml
+---
+title: 웹사이트에서 표시될 이름
+description: 이름 하단에 들어갈 설명
+tags: [앞서 작성한 태그의 identifier, 여러개 가능]
+image: <assets/images/techlog/>내에 위치한 이미지 파일의 이름(확장자 포함)
+author: 작성자의 이름
+date: 작성 날짜 (yyyy-mm-dd)
+---
+공부한 내용
+```

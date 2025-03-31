@@ -3,7 +3,9 @@ layout: default
 ---
 
 <div class="hyde content">
-  {{ content }} {% assign author = site.data.authors | where: 'name', page.author | first %} {% if author %}
+  {{ content }}
+  {% assign author = site.data.authors | where: 'name', page.author | first %}
+  {% if author %}
   <div class="hyde share">
     <a class="hyde share-item copy" data-clipboard-text="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
       <i class="fas fa-link"></i>
@@ -26,7 +28,8 @@ layout: default
       </div>
     </div>
   </div>
-  {% endif %} {% if site.comments.enabled %}
+  {% endif %}
+  {% if site.comments.enabled %}
   <div class="hyde comment">
     <hr />
     <h2>댓글</h2>

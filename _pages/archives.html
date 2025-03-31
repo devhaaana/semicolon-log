@@ -6,28 +6,30 @@ visible: true
 ---
 
 <div class="hyde posts">
-  {% assign sorted = site.archives | sort: 'date' | reverse %} {% for archive in sorted %}
+  {% assign sorted = site.archives | sort: 'date' | reverse %}
+  {% for post in sorted %}
   <div class="hyde post{% unless forloop.last %} divider{% endunless %}">
-    <a href="{{ site.baseurl }}{{ archive.url }}">
+    <a href="{{ site.baseurl }}{{ post.url }}">
       <div class="hyde post-thumbnail-wrapper">
-        {% if archive.image %}
-        <div class="hyde post-thumbnail" style="background-image: url('{{ site.baseurl }}/assets/images/archives/{{ archive.image }}');"></div>
-        {% elsif archive.youtube %}
-        <div
-          class="hyde post-thumbnail"
-          style="background-image: url('{{ archive.youtube | prepend: 'https://img.youtube.com/vi/' }}/maxresdefault.jpg')"
-        ></div>
+        {% if post.image %}
+        <div class="hyde post-thumbnail" style="background-image: url('{{ site.baseurl }}/assets/images/archives/{{ post.image }}'); background-color: white;"></div>
+        {% elsif post.youtube %}
+        <div class="hyde post-thumbnail" style="background-image: url('{{ post.youtube | prepend: 'https://img.youtube.com/vi/' }}/maxresdefault.jpg');"></div>
         {% else %}
         <div class="hyde post-thumbnail"></div>
         {% endif %}
       </div>
     </a>
-    <a href="{{ site.baseurl }}{{ archive.url }}">
-      <h2 class="hyde post-title">{{ archive.title }}</h2>
+    <a href="{{ site.baseurl }}{{ post.url }}">
+      <h2 class="hyde post-title">{{ post.title }}</h2>
     </a>
+    <p class="hyde post-preview">{{ post.description }}</p>
+    {% include tags.html %}
     <div class="hyde post-trail">
-      <span class="hyde post-date">{{ archive.date | date: '%Y년 %-m월 %-d일' }}</span>
+      <span class="hyde post-date">{{ post.date | date: '%Y년 %-m월 %-d일' }}</span>
     </div>
   </div>
-  {% else %} {% include empty.html %} {% endfor %}
+  {% else %}
+  {% include empty.html %}
+  {% endfor %}
 </div>

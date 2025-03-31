@@ -1,9 +1,12 @@
 <div class="hyde jumbotron">
   <div class="hyde container">
     <h1>{% if page.layout == "tag" %}<span class="hyde symbol">#</span>{% endif %}{{ page.title }}</h1>
-    {% if page.layout == "post" or page.layout == "archive" or page.layout == "til" %} {% assign author = site.data.authors | where: 'name', page.author | first %} {% include tags.html %}
+    {% if page.layout == "post" or page.layout == "archive" or page.layout == "til" or page.layout == "techlog" %}
+    {% assign author = site.data.authors | where: 'name', page.author | first %}
+    <h2>{{ page.description }}</h2>
+    {% include tags.html %}
     <div class="hyde post-desc">
-      {% if page.layout == "post" or page.layout == "archive" or page.layout == "til" %}
+      {% if page.layout == "post" or page.layout == "archive" or page.layout == "til" or page.layout == "techlog" %}
       <div class="hyde post-info">
         {% if author.image %}
         <img src="{{ site.baseurl }}/{{ author.image }}" alt="author-profile" />
