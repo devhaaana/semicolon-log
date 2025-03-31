@@ -122,6 +122,12 @@ img {
   border-radius: 5px;
   word-break: break-word;
 }
+.hyde.content.about img {
+  width: 40%;
+  height: 40%;
+  display: block;
+  border-radius: 50%;
+}
 .hyde.content.about h2 {
   margin-top: 3rem;
 }
@@ -1065,6 +1071,46 @@ hr {
 .hyde.divider {
   border-bottom: 1px solid #eaeaec;
 }
+/* .hyde.profile-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.hyde.profile-wrapper .hyde.profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-bottom: 0.75rem;
+  margin-bottom: 1rem;
+}
+.hyde.profile-wrapper .hyde.profile .hyde.profile-main {
+  max-width: 30%;
+}
+.hyde.profile-wrapper .hyde.profile .hyde.profile-main img {
+  display: block;
+  padding: 2rem;
+  border-radius: 50%;
+}
+.hyde.profile-wrapper .hyde.profile .hyde.profile-desc {
+  text-align: left;
+}
+.hyde.profile-wrapper .hyde.profile .hyde.profile-desc h2 {
+  margin-top: 0;
+} */
 .hyde.career-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
