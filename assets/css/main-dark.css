@@ -8,14 +8,25 @@ google
 #F4B400
 #DB4437
 #8a8d92
+
+github
+#e1e4e8
 */
 
 @media (prefers-color-scheme: dark) {
   body {
-    background: #222;
+    background: #222 !important;
   }
   .hyde.navbar-parent.hyde.navbar-bg {
     background-color: rgba(43, 43, 43, 0.9) !important;
+  }
+  .hyde.navbar-parent.hyde.navbar-bg .hyde.nav-item:before,
+  .hyde.navbar-parent.hyde.navbar-bg .hyde.nav-item:after {
+    background-color: white !important;
+  }
+  .hyde.navbar-parent.hyde.navbar-bg .hyde.nav-item:not(:first-child):hover a,
+  .hyde.navbar-parent.hyde.navbar-bg .hyde.nav-item.active a {
+    color: #222 !important;
   }
   .hyde.navbar-parent.hyde.navbar-bg .hyde.nav-toggler a {
     color: white !important;
@@ -109,7 +120,7 @@ google
     color: #222 !important;
     background-color: white !important;
   }
-  .hyde.header .fa-bolt:hover {
+  .hyde.header .fa-plane:hover {
     color: #F4B400 !important;
   }
   .hyde.footer-wrapper {
@@ -134,5 +145,32 @@ google
   }
   .hyde.footer-wrapper .hyde.footer .text a {
     color: #d4d4d9 !important;
+  }
+  #search-bar {
+    border: 1.5px solid #444;
+  }
+  
+  #search-bar #search-input {
+    color: white !important;
+    background: #222 !important;
+  }
+  #search-bar #search-result {
+    background-color: #222 !important;
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.7) !important;
+  }
+  #search-bar #search-result .result-item .description {
+    color: #eaeaec !important;
+  }
+  #post-list .title {
+    color: #f4f4f5 !important;
+  }
+  #post-list .description {
+    color: #d4d4d9 !important;
+  }
+  #post-list .tag {
+    background-color: #eaeaec !important;
+  }
+  #post-list .divider {
+    border-bottom: 1px solid #2b2b2b !important;
   }
 }

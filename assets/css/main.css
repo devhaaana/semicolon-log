@@ -215,13 +215,11 @@ img {
 }
 .hyde.navbar-parent.hyde.navbar-bg .hyde.nav-item:before,
 .hyde.navbar-parent.hyde.navbar-bg .hyde.nav-item:after {
-  /* background-color: #222 !important; */
-  background-color: white !important;
+  background-color: #222 !important;
 }
 .hyde.navbar-parent.hyde.navbar-bg .hyde.nav-item:not(:first-child):hover a,
 .hyde.navbar-parent.hyde.navbar-bg .hyde.nav-item.active a {
-  /* color: white !important; */
-  color: #222 !important;
+  color: white !important;
 }
 .hyde.navbar-parent .hyde.navbar {
   list-style: none;
