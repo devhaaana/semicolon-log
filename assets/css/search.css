@@ -1,0 +1,114 @@
+.dropdown-menu li{
+    text-transform:capitalize;
+    font-family: Helvetica Neue, Helvetica, Arial, "PingFang SC","Hiragino Kaku Gothic ProN",
+    "游ゴシック", YuGothic, Meiryo, sans-serif !important;
+}
+        @media screen and (min-width: 768px) {
+            .dropdown-menu {
+				position:relative;
+                float: none;
+                font-size: 20px;
+                width: 70%;
+                margin: 0 15%;
+            }
+           
+
+			.cb-search-tool ul{
+                 width: 70% ;
+                 white-space:nowrap;
+                 overflow:hidden;
+                 text-overflow: ellipsis;
+             }
+
+
+            .cb-search-content {
+                width: 70%;
+                margin: 0 15%;
+                position: absolute;
+                top: 13%;
+                left: auto;
+                right: auto;
+                font-size: 22px;
+                height: 50px;
+                background-color: #eee;
+                color: black;
+                opacity: 1.0;
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            .dropdown-menu {
+				position:relative;
+                float: none;
+                font-size: 20px;
+                width: 96%;
+                margin: 0 2%;
+            }
+			.cb-search-tool ul{
+				width: 96% ;
+				white-space:nowrap; 
+				overflow:hidden; 
+				text-overflow: ellipsis;
+			}
+
+            .cb-search-content {
+                width: 96%;
+                margin: 0 2%;
+                position: absolute;
+                top: 10%;
+                left: auto;
+                right: auto;
+                font-size: 22px;
+                height: 50px;
+                background-color: #eee;
+                color: black;
+                opacity: 1.0;
+            }
+        }
+.cb-search-tool input[type="checkbox"] {
+    appearance: auto !important;
+    -webkit-appearance: auto !important;
+    margin-top: 3px;
+    height: 1rem;
+    width: 1rem;
+    margin-left: 1rem;
+    margin-right: 5px;
+
+}
+
+.cb-search-tool input[type="text"] {
+    width: 90%;
+    position: relative;
+    vertical-align: top;
+    background-color: white;
+    border-radius: .25rem;
+    height: 40px;
+    margin: 10px;
+    font-size: 1.5rem;
+}
+
+.cb-search-tool .text {
+    color: var(--main-text-color);
+}
+
+.cb-search-tool div.tt-menu {
+    left: 0px !important;
+    margin-top: -10px !important;
+    margin-left: 10px;
+}
+
+.cb-search-tool #searchbar{
+    margin-top: 50px;
+}
+.cb-search-tool #scrollable-dropdown-menu{
+    width: 80vw;
+}
+
+.cb-search-tool #scrollable-dropdown-menu .tt-dropdown-menu {
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.cb-search-tool span.twitter-typeahead {
+    width: 90%;
+}

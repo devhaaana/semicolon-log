@@ -1,6 +1,7 @@
 ---
 title: Git commit 취소 및 되돌리기
 description: 왜 그런 날 있잖아요. commit 잘못한 날.
+category: Techlog
 tags: [알쓸코잡]
 image: /알쓸코잡/banner-white.png
 author: devhaaana

@@ -3,7 +3,12 @@
     <div class="hyde footer">
       <div class="hyde footer-left">
         <ul class="hyde footer-menu links">
-          {% assign pages = site.pages | sort:'url' %} {% for p in pages %} {% if p.visible == true %}
+          <!-- {% assign pages = site.pages | sort:'url' %} {% for p in pages %} {% if p.visible == true %}
+          <li>
+            <a href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a>
+          </li>
+          {% endif %} {% endfor %} -->
+          {% assign pages = site.pages | sort:'url' %} {% for p in pages %} {% if p.visible == true and p.url != "/search" %}
           <li>
             <a href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a>
           </li>
@@ -14,14 +19,17 @@
       <div class="hyde footer-right">
         <ul class="hyde footer-menu social">
           <li>
-            <a href="https://github.com/{{ site.github }}"><i class="fab fa-github"></i></a>
+            <a href="{{ site.baseurl }}/feed.xml" title="RSS"><i class="fa-solid fa-rss"></i></a>
           </li>
           <li>
-            <a href="mailto:{{ site.email }}"><i class="fas fa-envelope"></i></a>
+            <a href="https://github.com/{{ site.github }}"><i class="fa-brands fa-github"></i></a>
+          </li>
+          <li>
+            <a href="mailto:{{ site.email }}"><i class="fa-solid fa-envelope"></i></a>
           </li>
         </ul>
         <p class="text">
-          Made with <a href="https://github.com/{{ site.github }}"><i class="fas fa-bolt"></i> devhaaana</a>
+          Made with <a href="https://github.com/{{ site.github }}"><i class="fa-solid fa-plane"></i> devhaaana</a>
         </p>
       </div>
     </div>

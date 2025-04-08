@@ -1,12 +1,12 @@
 ---
 title: radipy
 description: radipy is a desktop application for streaming and downloading broadcasts from radiko, a Japanese radio service, with PyQt5-based interface.
+category: Archives
 tags: [python, pyqt5, radiko, ffmpeg]
 author: devhaaana
 image: /radipy/banner.svg
 date: 2025-01-01
 ---
-
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://github.com/devhaaana/radipy/blob/main/LICENSE)
 [![Release version](https://img.shields.io/github/release/devhaaana/radipy.svg?label=Download&style=for-the-badge)](#release-files "Release Files")
 [![Commits](https://img.shields.io/github/commit-activity/y/devhaaana/radipy.svg?label=commits&style=for-the-badge)](https://github.com/devhaaana/radipy/commits "Commit History")
@@ -75,8 +75,8 @@ python main.py
 
 ## Release Files
 
-| File | Description |
-| --- | --- |
+| File                                                                                    | Description                                                        |
+| --------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
 | [radipy-1.0.0.zip](https://github.com/devhaaana/radipy/archive/refs/tags/v1.0.0.zip)       | A*ZIP* file containing the full source code of radipy v1.0.0.    |
 | [radipy-1.0.0.tar.gz](https://github.com/devhaaana/radipy/archive/refs/tags/v1.0.0.tar.gz) | A*TAR.GZ* file containing the full source code of radipy v1.0.0. |
 

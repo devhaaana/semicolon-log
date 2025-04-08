@@ -1,11 +1,19 @@
 ---
 title: tver-downloader
 description: Python implementation for recording TVer programs outside of Japan.
+category: Archives
 tags: [python, tver, ffmpeg]
 author: devhaaana
 image: /tver-downloader/banner.svg
 date: 2025-03-14
 ---
+<!-- <div align="center">
+  <a href="https://github.com/devhaaana/tver-downloader/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge" alt="LICENSE"/></a>
+  <a href="#release-files"><img src="https://img.shields.io/github/release/devhaaana/tver-downloader.svg?label=Download&style=for-the-badge" alt="Release Files"/></a>
+  <a href="https://github.com/devhaaana/tver-downloader/commits"><img src="https://img.shields.io/github/commit-activity/y/devhaaana/tver-downloader.svg?label=commits&style=for-the-badge" alt="Commit History"/></a>
+  <a href="https://github.com/devhaaana/tver-downloader/pulse/monthly"><img src="https://img.shields.io/github/last-commit/devhaaana/tver-downloader.svg?label=&style=for-the-badge&display_timestamp=committer" alt="Last Commit"/></a>
+</div> -->
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://github.com/devhaaana/tver-downloader/blob/main/LICENSE)
 [![Release version](https://img.shields.io/github/release/devhaaana/tver-downloader.svg?label=Download&style=for-the-badge)](#release-files "Release Files")
 [![Commits](https://img.shields.io/github/commit-activity/y/devhaaana/tver-downloader.svg?label=commits&style=for-the-badge)](https://github.com/devhaaana/tver-downloader/commits "Commit History")

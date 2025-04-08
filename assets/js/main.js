@@ -40,4 +40,15 @@ $(function() {
   $(".hyde.youtube").each(function() {
     return $(this).append('<iframe src="https://www.youtube.com/embed/' + this.id + '" frameborder="0" allowfullscreen></iframe>');
   });
+
+
+  // Replace PDF viewer with link on mobile devices
+  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  if (isMobile) {
+    $(".pdf-wrapper").each(function () {
+      const pdfUrl = $(this).data("pdf");
+      $(this).html(`<a href="${pdfUrl}" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf"></i> PDF 열기</a>`);
+    });
+  }
 });
+

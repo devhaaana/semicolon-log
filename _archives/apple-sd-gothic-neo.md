@@ -1,6 +1,7 @@
 ---
 title: apple-sd-gothic-neo
 description: Apple SD Gothic Neo for Web Developer
+category: Archives
 tags: [web]
 author: devhaaana
 image: /apple-sd-gothic-neo/banner-black.svg

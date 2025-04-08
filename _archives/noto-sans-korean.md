@@ -1,12 +1,12 @@
 ---
 title: noto-sans-korean
 description: Noto Sans Korean for Web Developer
+category: Archives
 tags: [web]
 author: devhaaana
 image: /noto-sans-korean/banner.svg
 date: 2025-03-06
 ---
-
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://github.com/devhaaana/noto-sans-korean/blob/main/LICENSE)
 [![Release version](https://img.shields.io/github/release/devhaaana/noto-sans-korean.svg?label=Download&style=for-the-badge)](#release-files "Release Files")
 [![Commits](https://img.shields.io/github/commit-activity/y/devhaaana/noto-sans-korean.svg?label=commits&style=for-the-badge)](https://github.com/devhaaana/radipy/commits "Commit History")

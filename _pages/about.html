@@ -31,7 +31,7 @@ visible: true
     <a class="hyde tag">MySQL</a>
     <a class="hyde tag">C/C++</a>
     <a class="hyde tag">MATLAB</a>
-    <a class="hyde tag"><i class="fas fa-code"></i></a>
+    <a class="hyde tag"><i class="fa-solid fa-code"></i></a>
   </div>
 
   <h2>🎓 Education</h2>
@@ -82,7 +82,7 @@ visible: true
         </div>
       </div>
   
-      <div id="{{ item.title }}" class="hyde lightbox" onclick="history.back()">
+      <div id="{{ item.title }}" class="hyde lightbox pdf-wrapper" data-pdf="{{ site.baseurl }}/assets/documents/{{ item.pdf_file }}" onclick="history.back()">
         <object data="{{ site.baseurl }}/assets/documents/{{ item.pdf_file }}" type="application/pdf" width="80%" height="80%">
           <p>PDF 파일을 불러오는 데 실패했습니다. Download the PDF: <a href="{{ site.baseurl }}/assets/documents/{{ item.pdf_file }}">Download</a>.</p>
         </object>

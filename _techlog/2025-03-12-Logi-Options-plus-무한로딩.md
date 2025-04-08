@@ -1,6 +1,7 @@
 ---
 title: Logi Options+ 무한 로딩 해결하기
 description: 왜 그런 날 있잖아요. Logi Options+가 무한 로딩에 빠지는 날.
+category: Techlog
 tags: [알쓸맥잡]
 image: /알쓸맥잡/banner.png
 author: devhaaana
@@ -29,7 +30,6 @@ Logi Options+엔 고질병이 있다.
 
 App Cleaner로 지우고 설치해도 무한 로딩에 빠졌고, 구글에서 해결 방법을 열심히 찾아봤다.
 
-
 ### 해결 방법
 
 해결 방법은 아래와 같다.
@@ -43,4 +43,3 @@ App Cleaner로 지우고 설치해도 무한 로딩에 빠졌고, 구글에서 �
 ![Application-Support](../assets/images/techlog/알쓸맥잡/logi-options-plus/application-support.png)
 
 - Logi Options+을 재설치한다.
-   
