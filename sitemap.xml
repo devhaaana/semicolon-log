@@ -26,11 +26,11 @@ layout: null
     <priority>1.0</priority>
   </url>
   {% endfor %}
-  {% for archive in site.archives %}
+  {% for post in site.archives %}
   <url>
-    <loc>{{ site.url }}{{ site.baseurl }}{{ archive.url }}</loc>
-    {% if archive.date %}
-    <lastmod>{{ archive.date | date_to_xmlschema }}</lastmod>
+    <loc>{{ site.url }}{{ site.baseurl }}{{ post.url }}</loc>
+    {% if post.date %}
+    <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
     {% endif %}
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -43,11 +43,21 @@ layout: null
     <priority>0.8</priority>
   </url>
   {% endfor %}
-  {% for til_post in site.til %}
+  <!-- {% for post in site.til %}
   <url>
-    <loc>{{ site.url }}{{ site.baseurl }}{{ til_post.url }}</loc>
-    {% if til_post.date %}
-    <lastmod>{{ til_post.date | date_to_xmlschema }}</lastmod>
+    <loc>{{ site.url }}{{ site.baseurl }}{{ post.url }}</loc>
+    {% if post.date %}
+    <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+    {% endif %}
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  {% endfor %} -->
+  {% for post in site.techlog %}
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}{{ post.url }}</loc>
+    {% if post.date %}
+    <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
     {% endif %}
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
